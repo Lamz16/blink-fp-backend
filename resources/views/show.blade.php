@@ -18,9 +18,9 @@
     </style>
 </head>
 <body>
-    <header class="container">
-        <h1>Daftar Link dari {{ $user->username }}</h1>
-    </header>
+    <!-- <header class="container">
+        <h1>{{ $user->username }}</h1>
+    </header> -->
 
     <div class="container">
             <div class="row justify-content-center mt-4">
