@@ -34,7 +34,7 @@
         </form>
     </section>
     <section class="container">
-        <h2>Daftar Link Kamu</h2>
+        <h2>Daftar Link Kamu<a href="{{route('link.show', auth()->user()->username)}}"> {{route('link.show', auth()->user()->username)}}</a></h2>
         <table class="table table-strip">
             <thead>
                 <tr>

@@ -44,7 +44,8 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    function short_links() {
+    //function ini untuk inisialisasi user yang login
+    function short_links() { 
         return $this->hasMany(ShortLink::class, 'user_id', 'id');
     }
 }

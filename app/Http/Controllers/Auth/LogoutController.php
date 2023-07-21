@@ -11,10 +11,10 @@ class LogoutController extends Controller
     /**
      * Handle the incoming request.
      */
-    public function __invoke(Request $request)
+    public function __invoke(Request $request) //
     {
         Auth::logout();
-
+        //terjadi break session dengan alur invalidasi sesi yang tersimpan dan memberi ruang untuk regenerate session baru lagi            
         $request->session()->invalidate();
         $request->session()->regenerate();
         

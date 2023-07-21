@@ -26,12 +26,12 @@ Route::name('guest.')->group(function() {
     Route::get('/register', [Auth\RegisterController::class, 'show'])->middleware('guest')->name('register');
     Route::post('/register', [Auth\RegisterController::class, 'store'])->middleware('guest')->name('store');
 });
+    
+    Route::post('/logout', LogoutController::class)->middleware('auth')->name('logout');
 
-Route::post('/logout', LogoutController::class)->middleware('auth')->name('logout');
-
-Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth')->name('dashboard');
-Route::post('/dashboard', [DashboardController::class, 'store'])->middleware('auth')->name('link.store');
+    Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth')->name('dashboard');
+    Route::post('/dashboard', [DashboardController::class, 'store'])->middleware('auth')->name('link.store');
 
 
-Route::get('/{username}', Guest\ProfileController::class)->name('link.show');
-Route::delete('/dashboard/{id}', [DashboardController::class, 'delete'])->middleware('auth')->name('link.delete');
+    Route::get('/{username}', Guest\ProfileController::class)->name('link.show');
+    Route::delete('/dashboard/{id}', [DashboardController::class, 'delete'])->middleware('auth')->name('link.delete');
