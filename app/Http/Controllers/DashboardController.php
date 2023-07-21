@@ -30,4 +30,11 @@ class DashboardController extends Controller
 
         return redirect()->route('dashboard')->with('success', 'Success insert data');
     }
+
+    function delete($id){
+
+        $filDel = ShortLink::findOrFail($id);
+        $filDel->delete();
+        return redirect()->route('dashboard')->with('succes', 'Succes delete data');
+    }
 }

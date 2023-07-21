@@ -11,6 +11,7 @@ export default defineConfig({
                 'resources/js/app.js',
             ],
             refresh: true,
+            publicPath: "/public/",
         }),
     ],
     resolve: {

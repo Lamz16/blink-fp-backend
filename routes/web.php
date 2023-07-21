@@ -34,3 +34,4 @@ Route::post('/dashboard', [DashboardController::class, 'store'])->middleware('au
 
 
 Route::get('/{username}', Guest\ProfileController::class)->name('link.show');
+Route::delete('/dashboard/{id}', [DashboardController::class, 'delete'])->middleware('auth')->name('link.delete');

@@ -50,7 +50,12 @@
                         <td>{{ $link->title }}</td>
                         <td><a href="{{ $link->real_url }}">{{ $link->real_url }}</a></td>
                         <td><a href="#{{ $link->short_url }}">{{ $link->short_url }}</a></td>
-                        <td></td>
+                        <td><form action="{{route('link.delete', $link->id)}}" method="post">
+                            @csrf
+                            @method('delete')
+                            
+                            <button class="btn-primary">Delete</button>
+                        </form></td>
                     </tr>
                 @endforeach
             </tbody>

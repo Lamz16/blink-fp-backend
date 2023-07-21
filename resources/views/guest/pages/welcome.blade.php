@@ -168,7 +168,7 @@
                     <div class="card pricing-card border-primary active">
                         <div class="card-body">
                             <h3>Popular</h3>
-                            <h3 class="text-primary">$23.00</h3>
+                            <h3 class="text-primary">$8</h3>
                             <p class="payment-period">Per month</p>
                             <p class="mb-4">Thank you for your very professional and prompt response.</p>
                             <button class="btn btn-primary btn-rounded">Get Started</button>
@@ -179,8 +179,8 @@
                     <div class="card pricing-card border-success">
                         <div class="card-body">
                             <h3>Enterprise</h3>
-                            <h3 class="text-success">$40.00</h3>
-                            <p class="payment-period">Per month</p>
+                            <h3 class="text-success">$85</h3>
+                            <p class="payment-period">Per Years</p>
                             <p class="mb-4">Thank you for your very professional and prompt response.</p>
                             <button class="btn btn-outline-success btn-rounded">Get Started</button>
                         </div>
